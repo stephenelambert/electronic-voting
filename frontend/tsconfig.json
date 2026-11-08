@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "*": ["./src/*"],
+            "@/*": [
+                "./src/*"
+            ],
+        },
+        "jsx": "react-jsx",
+        "lib": ["es2015", "dom", "es2016"],
+        "esModuleInterop": true,
+    },
+    "include": ["src"],
+    // the tests run in Node, and Node's types would change how the app's code is checked
+    "exclude": ["src/**/*.test.tsx", "src/utils/testvectors.tsx"]
+}
